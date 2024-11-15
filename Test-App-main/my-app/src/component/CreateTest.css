@@ -1,0 +1,241 @@
+/* Overall Test Form Style */
+.test-form {
+    margin: 0 auto;
+    margin-left: 340px;
+    width: 60%; /* Reduced width to make it smaller */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for emphasis */
+    min-height: 699px;
+}
+
+/* Heading Styles */
+h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #004d99;
+    text-align: center;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Form Field Styles */
+.form-group0 {
+    margin-bottom: 8px;
+    text-align: left;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+label{
+    float: inline-start;
+    clear: inline-start;
+}
+
+.input-field,
+.textarea-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.textarea-field {
+    resize: none;
+}
+
+/* Question Section Styles */
+.question-group {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow around question groups */
+    width: 75%;
+    margin: 0 auto;
+}
+
+.question-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.question-number {
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Blue focus shadow */
+}
+
+textarea::placeholder,
+input[type='text']::placeholder {
+    opacity: 0.5;
+    color: #999;
+}
+
+/* Option Group Styles */
+.option-group {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 12px;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+input[type='checkbox']:checked,
+input[type='radio']:checked {
+    background-color: #0000FF;
+}
+
+input[type='checkbox'] {
+    border: 2px solid #0000FF;
+}
+
+input[type='radio'] {
+    border-radius: 50%;
+    border: 2px solid #0000FF;
+    background-color: #fff;
+}
+
+/* Button Styles */
+button {
+    background-color: #28a745;
+    font-size: 12px;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Shadow around buttons */
+}
+
+.submit-btn {
+    background-color: #0000FF;
+    font-size: 14px;
+}
+
+.submit-btn:hover {
+    background-color: #ff6a00;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* New Buttons (Blue) */
+.add-option-group button {
+    background-color: #007bff;
+}
+
+.add-option-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Add Option Input and Remove Question */
+.add-option-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.custom-input,
+.custom-input-2 {
+    width: 48%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.custom-input-2 {
+    float: right;
+    text-align: right;
+    width: auto;
+}
+
+/* Test Link Section Styles */
+.test-link-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #dde9f5;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.test-link-container p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.test-link-container a {
+    color: #1760c1;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.test-link-container a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.button-group1 {
+    margin-top: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .test-form {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-group0,
+    .question-group {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

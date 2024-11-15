@@ -1,0 +1,183 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+/* Main Dashboard Wrapper */
+.dashboard-wrapper {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* Chart Styles */
+.charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center charts */
+}
+
+.chart {
+  flex: 1;
+  min-width: 150px;  /* Reduced min-width */
+  max-width: 300px;  /* Reduced max-width */
+}
+
+
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Dashboard Content Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  background: #ffffff;
+  padding: 16px;
+  height: 100vh; /* Fill the height */
+  position: relative;
+  margin-left: 225px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Header and Titles */
+.dashboard-container h2 {
+  margin-bottom: 20px;
+}
+
+/* Profile Section */
+.profile-section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.profile-image-label {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  border: 2px solid #000000;
+  transition: border-color 0.3s ease;
+}
+
+.cropper-container {
+  margin-top: 10px;
+}
+
+/* Buttons Styles */
+.crop-button, .upload-button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.crop-button:hover, .upload-button:hover {
+  background-color: #000000;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
+
+.error {
+  color: #dc3545;
+  margin-top: 10px;
+}
+
+/* Layout Specific Styles */
+.site-layout-background {
+  background: #fff;
+}
+
+/* Card Component Styles */
+.ant-card {
+  margin-bottom: 8px;
+}
+
+.ant-card-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Chart Containers */
+.pie-chart-container,
+.line-chart-container,
+.radar-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Header Styles */
+.ant-layout-header {
+  background: #fff;
+  padding: 0 24px;
+  line-height: 64px;
+  color: #000;
+  font-size: 18px;
+}
+
+/* Sidebar Styles */
+.ant-layout-sider {
+  background: #001529;
+}
+
+/* Content Area */
+.ant-layout-content {
+  background: #f0f2f5;
+  padding: 24px;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;   /* Elegant white background */
+  border-radius: 15px;      /* Rounded container for soft edges */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  width: 400px;             /* Custom width for compact styling */
+  height: 400px;            /* Ensure the component is centered */
+}
+.ant-progress-circle {
+  border-radius: 50%; /* Ensure the progress circle itself has rounded edges */
+}
+
+.ant-card .ant-card-body {
+  padding: 0px; }
+
+.ant-progress-circle .ant-progress-text {
+  font-size: 24px;         /* Larger percentage text for emphasis */
+  font-weight: bold;       /* Make the percentage stand out */
+  color: #333;             /* Darker text for readability */
+}
